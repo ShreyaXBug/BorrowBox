@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal" android:padding="18dp" android:background="@color/background">
+ <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Camera Practical" android:textColor="@color/text_primary" android:textSize="28sp" android:textStyle="bold"/>
+ <ImageView android:id="@+id/capturedImage" android:layout_width="match_parent" android:layout_height="280dp" android:layout_marginTop="18dp" android:src="@drawable/profile1" android:scaleType="centerCrop"/>
+ <Button android:id="@+id/captureBtn" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="16dp" android:text="Capture image" android:textAllCaps="false"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp" android:background="@color/background">
+ <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SQLite CRUD" android:textColor="@color/text_primary" android:textSize="28sp" android:textStyle="bold"/>
+ <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Local insert, update, delete and search demo." android:textColor="@color/text_secondary"/>
+ <EditText android:id="@+id/localTitle" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="14dp" android:hint="Book title" android:background="@drawable/bg_input" android:padding="10dp"/>
+ <EditText android:id="@+id/localAuthor" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="8dp" android:hint="Author" android:background="@drawable/bg_input" android:padding="10dp"/>
+ <EditText android:id="@+id/localSearch" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="8dp" android:hint="Search saved books" android:background="@drawable/bg_input" android:padding="10dp"/>
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:orientation="horizontal">
+  <Button android:id="@+id/insertBtn" android:layout_width="0dp" android:layout_height="46dp" android:layout_weight="1" android:text="Insert"/>
+  <Button android:id="@+id/updateBtn" android:layout_width="0dp" android:layout_height="46dp" android:layout_weight="1" android:text="Update"/>
+  <Button android:id="@+id/deleteBtn" android:layout_width="0dp" android:layout_height="46dp" android:layout_weight="1" android:text="Delete"/>
+ </LinearLayout>
+ <ListView android:id="@+id/localList" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="10dp" android:dividerHeight="1dp"/>
+</LinearLayout>

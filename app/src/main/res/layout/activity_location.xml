@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="18dp" android:background="@color/background">
+ <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GPS / Location" android:textColor="@color/text_primary" android:textSize="28sp" android:textStyle="bold"/>
+ <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Checks location permissions and reads the current device coordinates." android:textColor="@color/text_secondary"/>
+ <Button android:id="@+id/getLocationBtn" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="18dp" android:text="Get current location" android:textAllCaps="false"/>
+ <Button android:id="@+id/openMapBtn" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="8dp" android:text="Open in Maps" android:textAllCaps="false"/>
+ <TextView android:id="@+id/locationText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:background="@drawable/bg_card" android:padding="16dp" android:text="Location not read yet" android:textColor="@color/text_primary" android:textSize="16sp"/>
+</LinearLayout>

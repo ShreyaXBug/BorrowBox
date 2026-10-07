@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+        <ImageView android:id="@+id/detailCover" android:layout_width="match_parent" android:layout_height="300dp" android:scaleType="centerCrop" android:src="@drawable/book1" />
+        <TextView android:id="@+id/detailCategory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:background="@drawable/bg_pill" android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingRight="12dp" android:paddingBottom="6dp" android:text="Novel" android:textColor="@color/lavender_dark" android:textStyle="bold" android:textSize="12sp" />
+        <TextView android:id="@+id/detailTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="The Alchemist" android:textColor="@color/text_primary" android:textSize="30sp" android:textStyle="bold" />
+        <TextView android:id="@+id/detailAuthor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Paulo Coelho" android:textColor="@color/text_secondary" android:textSize="15sp" />
+        <TextView android:id="@+id/detailOwner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Shared by Shreya" android:textColor="@color/text_primary" android:textStyle="bold" android:textSize="14sp" />
+        <TextView android:id="@+id/detailCondition" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Condition: Good" android:textColor="@color/text_secondary" />
+        <TextView android:id="@+id/detailDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Description" android:textColor="@color/text_primary" android:textSize="15sp" />
+
+        <Button android:id="@+id/btnBorrow" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="22dp" android:text="Request to Borrow" android:textAllCaps="false" android:textColor="@color/white" android:backgroundTint="@color/lavender" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal">
+            <Button android:id="@+id/btnRead" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="Read Aloud" android:textAllCaps="false" android:textColor="@color/white" android:backgroundTint="@color/lavender_dark" />
+            <Space android:layout_width="8dp" android:layout_height="1dp" />
+            <Button android:id="@+id/btnSms" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="SMS Owner" android:textAllCaps="false" android:textColor="@color/text_primary" android:backgroundTint="@color/baby_blue" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal">
+            <Button android:id="@+id/btnBluetooth" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="Bluetooth" android:textAllCaps="false" android:textColor="@color/text_primary" android:backgroundTint="@color/baby_pink" />
+            <Space android:layout_width="8dp" android:layout_height="1dp" />
+            <Button android:id="@+id/btnLocation" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="Get Location" android:textAllCaps="false" android:textColor="@color/text_primary" android:backgroundTint="@color/baby_blue" />
+        </LinearLayout>
+        <Button android:id="@+id/btnShare" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="10dp" android:text="Share Book" android:textAllCaps="false" android:textColor="@color/white" android:backgroundTint="@color/lavender_dark" />
+    </LinearLayout>
+</ScrollView>

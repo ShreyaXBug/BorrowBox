@@ -1,0 +1,28 @@
+BorrowBox Realtime Database development rules
+
+Publish in Firebase Console -> Realtime Database -> Rules:
+
+{
+  "rules": {
+    "Users": {
+      ".read": "auth != null",
+      "$uid": {
+        ".write": "auth != null && auth.uid === $uid"
+      }
+    },
+    "Books": {
+      ".read": "auth != null",
+      "$bookId": {
+        ".write": "auth != null"
+      }
+    },
+    "Requests": {
+      ".read": "auth != null",
+      "$requestId": {
+        ".write": "auth != null"
+      }
+    }
+  }
+}
+
+These rules are appropriate for a college/demo project. Tighten the write rules before production deployment.

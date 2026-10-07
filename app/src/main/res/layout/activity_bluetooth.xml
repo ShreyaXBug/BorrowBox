@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="18dp" android:background="@color/background">
+ <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bluetooth Practical" android:textColor="@color/text_primary" android:textSize="28sp" android:textStyle="bold"/>
+ <TextView android:id="@+id/btStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Checking Bluetooth..." android:textColor="@color/text_secondary"/>
+ <Button android:id="@+id/enableBtBtn" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="14dp" android:text="Enable Bluetooth" android:textAllCaps="false"/>
+ <Button android:id="@+id/discoverableBtn" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="8dp" android:text="Make device discoverable" android:textAllCaps="false"/>
+ <Button android:id="@+id/discoverBtn" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="8dp" android:text="Discover nearby devices" android:textAllCaps="false"/>
+ <ListView android:id="@+id/devicesList" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="12dp" android:dividerHeight="1dp"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fragment Demo" android:textColor="@color/text_primary" android:textSize="28sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Two fragments hosted in one activity: vertical stacking and a horizontal pair." android:textColor="@color/text_secondary" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Vertical fragment area" android:textColor="@color/lavender_dark" android:textStyle="bold" />
+        <FrameLayout android:id="@+id/verticalContainer" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="8dp" android:background="@drawable/bg_blue" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Horizontal fragment area" android:textColor="@color/lavender_dark" android:textStyle="bold" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="140dp" android:orientation="horizontal" android:weightSum="2">
+            <FrameLayout android:id="@+id/horizontalOne" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@drawable/bg_pink" />
+            <FrameLayout android:id="@+id/horizontalTwo" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@drawable/bg_blue" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

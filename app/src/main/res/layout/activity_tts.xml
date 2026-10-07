@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/background">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Text &amp; Speech" android:textColor="@color/text_primary" android:textSize="28sp" android:textStyle="bold"/>
+  <EditText android:id="@+id/textInput" android:layout_width="match_parent" android:layout_height="130dp" android:layout_marginTop="16dp" android:gravity="top" android:hint="Type something to speak..." android:inputType="textMultiLine" android:background="@drawable/bg_input" android:padding="12dp"/>
+  <Button android:id="@+id/speakBtn" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="12dp" android:text="Speak text" android:textAllCaps="false"/>
+  <Button android:id="@+id/listenBtn" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="8dp" android:text="Speech to text" android:textAllCaps="false"/>
+  <Button android:id="@+id/stopBtn" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="8dp" android:text="Stop" android:textAllCaps="false"/>
+ </LinearLayout>
+</ScrollView>
